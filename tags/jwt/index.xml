@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>JWT on MLOG</title><link>https://example.com/tags/jwt/</link><description>Recent content in JWT on MLOG</description><generator>Hugo -- 0.126.3</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Dec 2024 01:20:03 +0000</lastBuildDate><atom:link href="https://example.com/tags/jwt/index.xml" rel="self" type="application/rss+xml"/><item><title>jwt redis</title><link>https://example.com/posts/jwt-redis/</link><pubDate>Tue, 03 Dec 2024 01:20:03 +0000</pubDate><guid>https://example.com/posts/jwt-redis/</guid><description>Redis JWT 在 .NET 中使用 Redis 来存储 JWT（JSON Web Token）可以通过多种方式实现， 例如在用户登录时将生成的 JWT 存储在 Redis 中以便于后续验证和管理。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>JWT on MLOG</title><link>https://bddwd.github.io/tags/jwt/</link><description>Recent content in JWT on MLOG</description><generator>Hugo -- 0.126.3</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Dec 2024 01:20:03 +0000</lastBuildDate><atom:link href="https://bddwd.github.io/tags/jwt/index.xml" rel="self" type="application/rss+xml"/><item><title>jwt redis</title><link>https://bddwd.github.io/posts/jwt-redis/</link><pubDate>Tue, 03 Dec 2024 01:20:03 +0000</pubDate><guid>https://bddwd.github.io/posts/jwt-redis/</guid><description>Redis JWT 在 .NET 中使用 Redis 来存储 JWT（JSON Web Token）可以通过多种方式实现， 例如在用户登录时将生成的 JWT 存储在 Redis 中以便于后续验证和管理。
 实现步骤
 引入依赖 确保你的项目引入了以下必要的 NuGet 包：
 Microsoft.AspNetCore.Authentication.JwtBearer：用于 JWT 身份验证。 StackExchange.Redis：用于与 Redis 通信。
@@ -6,7 +6,7 @@ dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer dotnet add pack
 生成 JWT 根据用户信息生成 JWT 并将其存储到 Redis。
 验证 JWT 在验证阶段从 Redis 检查 token 是否有效。
 实现 Token 的失效机制 利用 Redis 的 TTL（过期时间）特性来管理 token 的生命周期。
-代码实现 1. 配置 Redis 客户端 在 Program.cs 或 Startup.</description></item><item><title>.NET JWT</title><link>https://example.com/posts/.net-jwt/</link><pubDate>Fri, 19 Apr 2024 01:26:35 +0000</pubDate><guid>https://example.com/posts/.net-jwt/</guid><description>前言
+代码实现 1. 配置 Redis 客户端 在 Program.cs 或 Startup.</description></item><item><title>.NET JWT</title><link>https://bddwd.github.io/posts/.net-jwt/</link><pubDate>Fri, 19 Apr 2024 01:26:35 +0000</pubDate><guid>https://bddwd.github.io/posts/.net-jwt/</guid><description>前言
 JWT (JSON Web Token) 是一种安全传输信息的开放标准，由Header、Payload和Signature三部分组成。它主要用于身份验证、信息交换和授权。JWT可验证用户身份，确保访问权限，实现单点登录，并在客户端和服务器之间安全地交换信息。因其简单、安全和便捷，JWT在现代Web应用中广泛使用。
 用JWT有多个原因：
 无状态的身份验证：JWT允许服务器无需保存用户的会话信息，因为所有必要的信息都存储在令牌本身中。这降低了服务器的存储需求，并提高了系统的可扩展性。
